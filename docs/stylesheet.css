@@ -11084,16 +11084,17 @@ header .content {
 #about .text {
   line-height: 32px;
 }
-#about .knowledge {
+
+.green-card {
   background-color: #09ed70;
   overflow: hidden;
   position: relative;
 }
-#about .knowledge .list-unstyled {
+.green-card .list-unstyled {
   position: relative;
   z-index: 100;
 }
-#about .knowledge .list-unstyled li {
+.green-card .list-unstyled li {
   font-size: 0.8rem;
   background-color: rgba(0, 0, 0, 0.3);
   display: inline-block;
@@ -11103,7 +11104,7 @@ header .content {
   text-transform: uppercase;
   font-weight: bold;
 }
-#about .knowledge .list-unstyled li:last-child {
+.green-card .list-unstyled li:last-child {
   margin-bottom: 0;
 }
 
@@ -11146,6 +11147,29 @@ header .content {
 #projs .portfolio-card:hover .details div {
   transform: translateY(0);
 }
+#projs .portfolio-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 50px;
+  overflow-x: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms;
+}
+#projs .portfolio-content .content {
+  background-color: #FFF;
+  min-height: 800px;
+}
+#projs .portfolio-content::-webkit-scrollbar {
+  display: none;
+}
+#projs .portfolio-content-v {
+  visibility: visible;
+  opacity: 1;
+}
 
 footer {
   background-color: #069651;
@@ -11153,6 +11177,10 @@ footer {
 
 .wrapper {
   max-width: 800px;
+}
+
+.wrapper-2 {
+  max-width: 1000px;
 }
 
 .h0 {
@@ -11168,13 +11196,13 @@ footer {
   border-radius: 4px;
 }
 
-.button-green {
+.button-green, .button-green-bg {
   border-color: #09ed70;
   background-color: #09ed70;
   color: #141414;
   transition: all 300ms;
 }
-.button-green:hover {
+.button-green:hover, .button-green-bg:hover {
   background-color: transparent;
   color: #09916d;
   border-color: #09916d;
@@ -11189,6 +11217,29 @@ footer {
 .button-outline-green:hover {
   background-color: #09ed70;
   color: #141414;
+}
+
+.button-green-bg:hover {
+  background-color: #63f9a7;
+  border-color: #63f9a7;
+  color: #141414;
+}
+
+.button-red, .button-red-bg {
+  border-color: #ff1424;
+  background-color: #ff1424;
+  color: #FFF;
+  transition: all 300ms;
+}
+.button-red:hover, .button-red-bg:hover {
+  background-color: transparent;
+  color: #ff1424;
+}
+
+.button-red-bg:hover {
+  background-color: #ff7a83;
+  border-color: #ff7a83;
+  color: #FFF;
 }
 
 section {

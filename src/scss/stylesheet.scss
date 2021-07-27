@@ -17,6 +17,7 @@ body {
 @import 'footer';
 
 .wrapper { max-width: 800px; }
+.wrapper-2 { max-width: 1000px; }
 
 .h0 {
 	font-size: 4rem;
@@ -51,6 +52,35 @@ body {
 	&:hover {
 		background-color: #09ed70;
 		color: #141414;
+	}
+}
+.button-green-bg {
+	@extend .button-green;
+
+	&:hover {
+		background-color: lighten(#09ed70, 20%);
+		border-color: lighten(#09ed70, 20%);
+		color: #141414;
+	}
+}
+.button-red {
+	border-color: #ff1424;
+	background-color: #ff1424;
+	color: #FFF;
+	transition: all 300ms;
+
+	&:hover {
+		background-color: transparent;
+		color: #ff1424;
+	}
+}
+.button-red-bg {
+	@extend .button-red;
+
+	&:hover {
+		background-color: lighten(#ff1424, 20%);
+		border-color: lighten(#ff1424, 20%);
+		color: #FFF;
 	}
 }
 

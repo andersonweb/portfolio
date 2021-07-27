@@ -38,4 +38,30 @@
 			}
 		}
 	}
+
+	.portfolio-content {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 50px;
+		overflow-x: auto;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 300ms;
+
+		.content {
+			background-color: #FFF;
+			min-height: 800px;
+		}
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+	.portfolio-content-v {
+		visibility: visible;
+		opacity: 1;
+	}
 }
