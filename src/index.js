@@ -9,4 +9,12 @@ $(document).ready(() => {
 		$('#projs .portfolio-content').toggleClass('portfolio-content-v');
 	});
 
+	/* Rolar suavemente */
+	$("a").click(function() {
+		var $id = $(this).attr('href');
+	    $('html, body').animate({
+	        scrollTop: $($id).offset().top
+	    }, 2000);
+	});
+
 });
