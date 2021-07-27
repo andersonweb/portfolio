@@ -1,0 +1,41 @@
+#projs {
+	background-color: #08c76b;
+	margin-top: 0;
+
+	.portfolio-card {
+		height: 230px;
+		background-size: cover;
+		overflow: hidden;
+		position: relative;
+
+		.details {
+			color: #141414;
+			background-color: rgba(#38e08f, .8);
+			position: absolute;
+			bottom: 0;
+			top: 0;
+			width: 100%;
+			opacity: 0;
+			transition: opacity 300ms ease;
+
+			div {
+				position: absolute;
+				bottom: 0px;
+				padding: 20px;
+				transform: translateY(100%);
+				transition: transform 300ms ease;
+			}
+
+			h3 { font-weight: 700; }
+			p { font-weight: 600; }
+		}
+
+		&:hover .details {
+			opacity: 1;
+
+			div {
+				transform: translateY(0);
+			}
+		}
+	}
+}

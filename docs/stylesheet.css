@@ -11046,7 +11046,7 @@ h3 {
     border-color: #dee2e6;
   }
 }
-.serif {
+.serif, section .title {
   font-family: "Merriweather";
 }
 
@@ -11056,6 +11056,8 @@ h3 {
 
 body {
   font-weight: 500;
+  color: #141414;
+  background-color: #f5f5f5;
 }
 
 header {
@@ -11079,6 +11081,76 @@ header .content {
   padding-bottom: 150px;
 }
 
+#about .text {
+  line-height: 32px;
+}
+#about .knowledge {
+  background-color: #09ed70;
+  overflow: hidden;
+  position: relative;
+}
+#about .knowledge .list-unstyled {
+  position: relative;
+  z-index: 100;
+}
+#about .knowledge .list-unstyled li {
+  font-size: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#about .knowledge .list-unstyled li:last-child {
+  margin-bottom: 0;
+}
+
+#projs {
+  background-color: #08c76b;
+  margin-top: 0;
+}
+#projs .portfolio-card {
+  height: 230px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+#projs .portfolio-card .details {
+  color: #141414;
+  background-color: rgba(56, 224, 143, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+#projs .portfolio-card .details div {
+  position: absolute;
+  bottom: 0px;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 300ms ease;
+}
+#projs .portfolio-card .details h3 {
+  font-weight: 700;
+}
+#projs .portfolio-card .details p {
+  font-weight: 600;
+}
+#projs .portfolio-card:hover .details {
+  opacity: 1;
+}
+#projs .portfolio-card:hover .details div {
+  transform: translateY(0);
+}
+
+footer {
+  background-color: #069651;
+}
+
 .wrapper {
   max-width: 800px;
 }
@@ -11098,11 +11170,49 @@ header .content {
 
 .button-green {
   border-color: #09ed70;
+  background-color: #09ed70;
+  color: #141414;
+  transition: all 300ms;
+}
+.button-green:hover {
+  background-color: transparent;
+  color: #09916d;
+  border-color: #09916d;
+}
+
+.button-outline-green {
+  border-color: #09ed70;
   background-color: transparent;
   color: #09ed70;
   transition: all 300ms;
 }
-.button-green:hover {
+.button-outline-green:hover {
   background-color: #09ed70;
   color: #141414;
+}
+
+section {
+  padding: 100px 0;
+}
+
+section .title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.rounded-2 {
+  border-radius: 10px;
+}
+
+.text-green {
+  color: #09916d;
+}
+
+a {
+  transition: color 200ms;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #0bba7a;
 }

@@ -1,0 +1,31 @@
+#about {
+	.text {
+		line-height: 32px;
+	}
+
+	.knowledge {
+		background-color: #09ed70;
+		overflow: hidden;
+		position: relative;
+
+		.list-unstyled {
+			position: relative;
+			z-index: 100;
+
+			li {
+				font-size: .8rem;
+				background-color: rgba(0, 0, 0, .3);
+				display: inline-block;
+				border-radius: 20px;
+				padding: 3px 10px;
+				margin-bottom: 5px;
+				text-transform: uppercase;
+				font-weight: bold;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
