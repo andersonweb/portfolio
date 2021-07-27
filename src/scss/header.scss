@@ -1,0 +1,17 @@
+header {
+	background-image: url('../images/header-bg.jpg');
+	background-size: cover;
+
+	.navbar-nav .nav-item { margin-right: 5px; &:last-child { margin-right: 0; } }
+	.navbar-nav .nav-link {
+		color: #FFF !important;
+		font-weight: 700;
+		font-size: .85rem;
+		letter-spacing: 1px;
+	}
+
+	.content {
+		padding-top: 80px;
+		padding-bottom: 150px;
+	}
+}
