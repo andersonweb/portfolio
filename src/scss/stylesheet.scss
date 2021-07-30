@@ -14,8 +14,10 @@ body {
 @import 'header';
 @import 'about';
 @import 'projs';
+@import 'contact';
 @import 'footer';
 
+.mini-wrapper { max-width: 600px; }
 .wrapper { max-width: 800px; }
 .wrapper-2 { max-width: 1000px; }
 
