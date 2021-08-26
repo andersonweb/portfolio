@@ -1,9 +1,8 @@
 header {
-	
 	.navbar {
 		margin: 15px;
 		padding: 10px 20px;
-		background-color: rgba(0, 0, 0, .93);
+		background-color: #141414;
 		border-radius: 23px;
 	}
 	.navbar-nav {
@@ -41,6 +40,17 @@ header {
 			&:hover {
 				color: rgba(255, 255, 255, 1) !important;
 			}
+		}
+	}
+
+	.header-title {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: right;
+		background-image: url('../../docs/header-bg.svg');
+
+		.h1 {
+			font-size: 1.8rem !important;
 		}
 	}
 }
@@ -81,6 +91,14 @@ header {
 
 			&::before {
 				display: none;
+			}
+		}
+
+		.header-title {
+			background-image: none;
+
+			.h1 {
+				font-size: 2.6rem !important;
 			}
 		}
 	}
