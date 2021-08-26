@@ -10,6 +10,10 @@ $(document).ready(() => {
 		$('.content-'+proj).addClass('d-block').siblings().removeClass('d-block');
 	});
 
+	$('.toggle-menu').on('click', function() {
+		$('header .navbar-nav').toggleClass('d-none');
+	});
+
 	// Rolar suavemente 
 	$("a").click(function() {
 		var $id = $(this).attr('href');

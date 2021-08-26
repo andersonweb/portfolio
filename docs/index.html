@@ -11,17 +11,22 @@
 
 	<header>
 
-		<navbar class="navbar navbar-dark py-0 px-5 navbar-expand">
+		<navbar class="navbar navbar-dark py-0 px-5 navbar-expand-lg">
 			<div class="container-fluid">
 
 				<!--<a href="index.html" class="navbar-brand serif font-weight-bold">Anderson Fer.</a>-->
 				<a href="index.html" class="navbar-brand"><img src="logo.svg" height="70px"></a>
 
-				<ul class="navbar-nav">
+				<ul class="navbar-nav d-none d-lg-block">
 					<li class="nav-item"><a href="#about" class="nav-link">Sobre Mim</a></li>
 					<li class="nav-item"><a href="#projs" class="nav-link">Portfólio</a></li>
 					<li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
+					<li class="nav-item nav-item-close d-lg-none toggle-menu"><a href="javascript:void(0)" class="nav-link"><img src="icons/close.svg" width="32px"></a></li>
 				</ul>
+
+				<a href="javascript:void(0)" class="toggle-menu d-lg-none">
+					<img src="icons/bars.svg" width="32px">
+				</a>
 
 			</div>
 		</navbar>

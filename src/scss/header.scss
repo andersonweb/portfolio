@@ -5,16 +5,60 @@ header {
 		background-color: rgba(0, 0, 0, .93);
 		border-radius: 23px;
 	}
-	.navbar-nav .nav-item { margin-right: 5px; &:last-child { margin-right: 0; } }
-	.navbar-nav .nav-link {
-		color: rgba(255, 255, 255, .6) !important;
-		font-weight: 400;
-		font-size: .93rem;
-		letter-spacing: 1px;
-		transition: color 250ms;
+	.navbar-nav {
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 500;
+		padding: 30px;
+		background-color: #141414;
 
-		&:hover {
-			color: rgba(255, 255, 255, 1) !important;
+		&::before {
+			content: "Barra Lateral";
+			color: #FFF;
+			font-size: 1.4rem;
+			margin-bottom: 15px;
+			font-weight: 400;
+		}
+
+		.nav-item-close {
+			position: absolute;
+			top: 20px;
+			right: 30px;
+		}
+
+		.nav-item { margin-right: 5px; &:last-child { margin-right: 0; } }
+		.nav-link {
+			color: rgba(255, 255, 255, .6) !important;
+			font-weight: 400;
+			font-size: .93rem;
+			letter-spacing: 1px;
+			transition: color 250ms;
+
+			&:hover {
+				color: rgba(255, 255, 255, 1) !important;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	header {
+		.navbar-nav {
+			width: auto;
+			background-color: transparent;
+			position: static;
+			padding: inherit;
+
+			.nav-item {
+				float: left;
+			}
+
+			&::before {
+				display: none;
+			}
 		}
 	}
 }
