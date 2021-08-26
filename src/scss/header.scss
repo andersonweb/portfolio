@@ -1,13 +1,21 @@
 header {
-	background-image: url('../images/header-bg.jpg');
-	background-size: cover;
-
+	
+	.navbar {
+		margin: 20px;
+		background-color: rgba(0, 0, 0, .93);
+		border-radius: 23px;
+	}
 	.navbar-nav .nav-item { margin-right: 5px; &:last-child { margin-right: 0; } }
 	.navbar-nav .nav-link {
-		color: #FFF !important;
-		font-weight: 700;
-		font-size: .85rem;
+		color: rgba(255, 255, 255, .6) !important;
+		font-weight: 400;
+		font-size: .93rem;
 		letter-spacing: 1px;
+		transition: color 250ms;
+
+		&:hover {
+			color: rgba(255, 255, 255, 1) !important;
+		}
 	}
 
 	.content {
